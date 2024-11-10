@@ -9,5 +9,5 @@ Berikut Link Desain Figma:
 https://www.figma.com/design/OBME7AyvH2U5ifefylrIkJ/DRINKS?node-id=0-1&node-type=canvas&t=IMNObUzjeudKHasU-0 
 
 Berikut Link Implementasi Repositori Github:
-
+https://github.com/itshykell/asessment2-drinks/tree/main
 
