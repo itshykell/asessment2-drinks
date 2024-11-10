@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('image/kop.jpg');
+}
+
+/* Navbar Styling */
+.navbar input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #f9f9f9;
+    padding: 60px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-image: url('image/kop.jpg');
+
+}
+
+.hero p {
+    color: #282828; 
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+    text-align: justify; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    padding: 10px;
+    min-height: 20px;
+}
+
+.footer-links p{
+    font-size: 13px;
+}

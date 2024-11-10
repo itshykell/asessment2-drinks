@@ -1,0 +1,148 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk header dan navbar */
+header {
+    width: 100%;
+    background-color: #813D3C; /* Warna latar belakang navbar */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap; /* Membuat navbar responsif */
+}
+
+/* Gaya logo */
+.logo {
+    height: 50px; /* Ukuran logo */
+    width: auto;
+    margin-right: auto; 
+}
+
+
+/* Gaya input pencarian */
+.search-bar {
+    padding: 8px 40px 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #E3C59D;
+    width: 500px; /* Memperpanjang lebar */
+    max-width: 100%; /* Membatasi lebar untuk layar kecil */
+    background-color: #813d3ccb; /* Warna latar belakang transparan */
+    color: #E3C59D; /* Warna teks */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23E3C59D" viewBox="0 0 24 24" width="18px" height="18px"%3E%3Cpath d="M0 0h24v24H0V0z" fill="none"/%3E%3Cpath d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 18px;
+}
+
+.search-bar::placeholder {
+    color: #E3C59D; /* Warna placeholder */
+    opacity: 0.8; /* Transparansi untuk placeholder */
+}
+
+/* Gaya nav link */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Jarak antar link */
+    align-items: center; /* Vertikal tengah */
+    flex-wrap: wrap; /* Membuat nav-links responsif */
+}
+
+.nav-links a {
+    color: #E3C59D; /* Warna teks link */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+/* Efek hover untuk nav links */
+.nav-links a:hover {
+    background-color: #813D3C; /* Warna saat di-hover */
+    border-radius: 15px;
+}
+
+/* Gaya untuk dropdown */
+/* Dropdown Menu Style */
+.dropdown-content {
+    display: none; /* Menyembunyikan dropdown secara default */
+    position: absolute;
+    background-color: #fff; /* Warna latar belakang dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Memberi efek bayangan */
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Menampilkan dropdown saat di-hover */
+}
+
+.dropdown-content a {
+    color: #8b4a4a; /* Warna teks default */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #8b4a4a; /* Warna latar belakang saat di-hover */
+    color: #E3C59D; /* Warna teks saat di-hover agar kontras dengan background */
+}
+
+/* Gaya untuk ikon (opsional) */
+.profile-icon,
+.orders-icon {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%; /* Lebar penuh pada layar kecil */
+        margin-top: 10px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        width: 100%;
+        padding: 8px 10px;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+    }
+    
+    .dropdown-content {
+        min-width: 120px; /* Sesuaikan lebar dropdown pada layar kecil */
+    }
+}

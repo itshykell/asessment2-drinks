@@ -1,0 +1,113 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2e2725; /* Warna latar belakang utama */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Tinggi minimum 100vh agar memenuhi tinggi viewport */
+    overflow-x: hidden; /* Mencegah scrolling horizontal */
+    box-sizing: border-box;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    background-image: url('image/db.jpg');
+    background-size: cover;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5); /* Warna overlay gelap */
+    background-blend-mode: darken; /* Menggabungkan warna latar belakang dengan gambar */
+}
+
+/*judul banner*/
+.hero h1{
+    font-size: 100px;
+    margin-left: 10%;
+}
+
+/*paragraf banner*/
+.hero p{
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+/* botton order */
+.product-btn {
+    padding: 10px 20px;
+    background-color: #E3C59D;
+    border-radius: 10px;
+    margin-left: 10%;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Content Styling (Drinks Section) */
+.Deskripsi p {
+    display: grid;
+    padding: 50px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    color: #ffffff;
+}
+
+.Deskripsi h2{
+    display: grid;
+    color: #ffffff;
+    margin-top: 60px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+
+.drink-card:hover {
+    transform: translateY(-5px);
+}
+
+.drink-card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.drink-card h2 {
+    font-size: 30px;
+    color: #333;
+    margin-top: auto;
+}
+
+.drink-card p {
+    font-size: 16px;
+    color: #212121;
+}
+
+.footer-links p{
+    font-size: 13px;
+}
+
+/* Dropdown Menu Style */
+.dropdown-content {
+    display: none; /* Menyembunyikan dropdown secara default */
+    position: absolute;
+    background-color: #ffffff; /* Warna latar belakang dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Memberi efek bayangan */
+    z-index: 1;
+}
+
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .drinks-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar sedang */
+    }
+}
+
+@media (max-width: 480px) {
+    .drinks-container {
+        grid-template-columns: 1fr; /* 1 kolom pada layar kecil */
+    }
+}

@@ -1,0 +1,53 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2e2725; /* Warna latar belakang utama */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Tinggi minimum 100vh agar memenuhi tinggi viewport */
+    overflow-x: hidden; /* Mencegah scrolling horizontal */
+    box-sizing: border-box;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    background-image: url('image/Banner_Jumat_Berkah.png');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5); /* Warna overlay gelap */
+    background-blend-mode: darken; /* Menggabungkan warna latar belakang dengan gambar */
+}
+
+/*judul banner*/
+.hero h1{
+    font-size: 100px;
+    margin-left: 10%;
+}
+
+/*paragraf banner*/
+.hero p{
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+/* Main Content Styling (Drinks Section) */
+.Deskripsi p {
+    display: grid;
+    padding: 50px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    color: #ffffff;
+}
+
+.Deskripsi h2{
+    display: grid;
+    color: #ffffff;
+    margin-top: 60px;
+    font-size: 30px;
+    padding-left: 30px;
+}
